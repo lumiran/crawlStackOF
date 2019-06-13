@@ -10,9 +10,13 @@
 #### 1.2. 问题爬取
 ##### 初始设置
 前往stackoverflow首页，按时间顺序排列整个网页。并设置一页显示50个问题，其网址如下：
-`https://stackoverflow.com/questions?page=page}&sort=newest&pagesize=50`
+`https://stackoverflow.com/questions?page=1&sort=newest&pagesize=50`
 
 按照要求，爬取90000页即可获取全部两年来的问题数据，这里使用`format`格式对网址标准格式进行遍历。
+```python
+_url = 'https://stackoverflow.com/questions?page={page}&sort=newest&pagesize=50'
+urls = [_url.format(page=page) for page in range(74244,90000)]
+```
 ##### 爬取数据
 设置`item.py`以规定爬取数据包含的内容。
 为创建问题数据库，设置搜索结果中问题的排列顺序，以及将来与问题答案进行链接，这里为每一条问题爬取的属性如下：
