@@ -70,7 +70,9 @@ https://stackoverflow.com/questions/46535327/i-cant-parsing-with-json-by-swift4
 同1所述。
 ##### 结果展示
 共爬取问题4488582条，其中回答数不为0的问题3368851条。
-![ef828b0e150af378c53ce385fd786215.png](en-resource://database/2989:1)
+
+![image](https://github.com/lumiran/crawlStackOF/blob/master/images/1.png)
+
 
 
 #### 1.4. 其他技巧
